@@ -1,3 +1,5 @@
+**Note:** This branch contains the deployment-ready static site and is intended for publishing. For development and source content, see the `main` branch.
+
 # Juan A. Colón Norat — Professional Portfolio Website
 
 ## Description
