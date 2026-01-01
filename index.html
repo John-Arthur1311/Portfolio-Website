@@ -1,502 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio website of Juan A. Colón Norat - Software Developer, Designer, and Creative Professional">
-    <meta name="author" content="Juan A. Colón Norat">
-    <title>Juan A. Colón Norat - Portfolio</title>
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/responsive.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Juan A. Colón Norat — Educator, Instructor, and Media & Literacy Researcher. Bridging learning with popular culture, storytelling, and critical literacy.">
+  <meta name="author" content="Juan A. Colón Norat">
+  <title>Juan A. Colón Norat — Educator · Instructor · Researcher</title>
+  <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="nav-brand">
-                <h1>JCN</h1>
-            </div>
-            <ul class="nav-menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </nav>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home">Juan A. Colón Norat</a>
+      <button class="nav-toggle" aria-controls="primary-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+      <nav id="primary-nav" class="primary-nav" aria-label="Primary navigation">
+        <ul class="nav-list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#research">Research</a></li>
+          <li><a href="#work">Teaching</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1 class="hero-title">Juan A. Colón Norat</h1>
-                <p class="hero-subtitle">Full Stack Developer | UI/UX Designer | Creative Problem Solver</p>
-                <p class="hero-description">
-                    Welcome to my portfolio. I create beautiful, functional digital experiences that help businesses and individuals achieve their goals.
-                </p>
-                <div class="hero-buttons">
-                    <a href="#portfolio" class="btn btn-primary">View My Work</a>
-                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
-                </div>
-            </div>
-            <div class="hero-image">
-                <div class="image-placeholder">
-                    <img src="images/hero-image.jpg" alt="Juan A. Colón Norat">
-                </div>
-            </div>
+  <main>
+    <!-- Home / Hero -->
+    <section id="home" class="hero" aria-labelledby="hero-heading">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <h1 id="hero-heading">Juan A. Colón Norat</h1>
+          <h2 class="hero-sub">Educator · English Instructor · Media & Literacy Researcher</h2>
+          <p class="hero-tagline">Bridging learning with popular culture, storytelling, and critical literacy.</p>
+          <p class="hero-desc">I am an English educator and instructor within the University of Puerto Rico system, focused on innovative teaching practices that integrate popular culture, digital media, and narrative-driven learning. My work explores how contemporary texts — from anime to multimedia storytelling — can expand literacy, engagement, and critical thinking in the classroom.</p>
+          <p class="hero-ctas">
+            <a class="btn primary" href="#projects">View Portfolio</a>
+            <a class="btn outline" href="#contact">Contact</a>
+          </p>
+
+          <div class="value-cards" aria-hidden="false">
+            <article class="card">
+              <h3>Teaching</h3>
+              <p>Student-centered English instruction grounded in clarity, creativity, and engagement.</p>
+            </article>
+            <article class="card">
+              <h3>Research</h3>
+              <p>New literacy studies, media integration, and critical thinking development.</p>
+            </article>
+            <article class="card">
+              <h3>Creative Pedagogy</h3>
+              <p>Using storytelling, humor, and popular culture as educational tools.</p>
+            </article>
+          </div>
         </div>
+
+        <div class="hero-figure">
+          <img src="images/hero-placeholder.svg" alt="Illustration placeholder: person at a desk with books and media" width="480" height="360">
+        </div>
+      </div>
     </section>
 
-    <!-- Value Highlights Section -->
-    <section id="highlights" class="highlights">
-        <div class="container">
-            <h2 class="section-title">Why Choose Me</h2>
-            <div class="highlights-grid">
-                <div class="highlight-card">
-                    <div class="highlight-icon">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M12 2L15.09 8.26H22L17.18 12.88L20.27 19.26L12 14.64L3.73 19.26L6.82 12.88L2 8.26H8.91L12 2Z"></path>
-                        </svg>
-                    </div>
-                    <h3>Quality Work</h3>
-                    <p>I deliver high-quality solutions that exceed expectations and stand the test of time.</p>
-                </div>
-                <div class="highlight-card">
-                    <div class="highlight-icon">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"></path>
-                        </svg>
-                    </div>
-                    <h3>Reliability</h3>
-                    <p>You can count on me to deliver projects on time with consistent, professional results.</p>
-                </div>
-                <div class="highlight-card">
-                    <div class="highlight-icon">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
-                        </svg>
-                    </div>
-                    <h3>Communication</h3>
-                    <p>Clear communication and collaboration are key to understanding and achieving your vision.</p>
-                </div>
-                <div class="highlight-card">
-                    <div class="highlight-icon">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path>
-                            <polyline points="13 2 13 9 20 9"></polyline>
-                        </svg>
-                    </div>
-                    <h3>Expertise</h3>
-                    <p>With years of experience, I bring technical expertise and creative solutions to every project.</p>
-                </div>
-            </div>
-        </div>
+    <!-- About -->
+    <section id="about" class="section" aria-labelledby="about-heading">
+      <div class="container">
+        <h2 id="about-heading">About Juan</h2>
+        <p class="lead">I am an instructor and educator specializing in English education, literacy development, and curriculum design. My professional work centers on making learning meaningful by connecting academic content with cultural relevance and student experience.</p>
+        <p>I actively integrate popular culture — including anime, digital media, and fictional narratives — into teaching and research, using these mediums to foster critical thinking, collaboration, and deeper engagement in English and composition courses.</p>
+        <p class="brand-line"><strong>Education thrives when learning feels relevant, thoughtful, and human.</strong></p>
+      </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>
-                        I'm Juan A. Colón Norat, a passionate full-stack developer and designer with a commitment to creating meaningful digital solutions. With a background in both technology and design, I bring a unique perspective to every project.
-                    </p>
-                    <p>
-                        My journey in tech has been driven by a curiosity to understand how things work and a desire to make them better. I believe in the power of clean code, intuitive design, and thoughtful user experience.
-                    </p>
-                    <p>
-                        Whether working on web applications, mobile solutions, or digital experiences, I approach each project with the same dedication to excellence and attention to detail that my clients have come to expect.
-                    </p>
-                </div>
-                <div class="about-image">
-                    <div class="image-placeholder">
-                        <img src="images/about-image.jpg" alt="Juan A. Colón Norat">
-                    </div>
-                </div>
-            </div>
+    <!-- Education & Academic Background -->
+    <section id="education" class="section" aria-labelledby="education-heading">
+      <div class="container">
+        <h2 id="education-heading">Education</h2>
+        <div class="education-list">
+          <div class="edu-item">
+            <h3>Master of Arts in English Education</h3>
+            <p><em>University of Puerto Rico System</em></p>
+            <p>Focus areas include ESL instruction, literacy studies, pedagogy, and media-based learning.</p>
+          </div>
+
+          <div class="edu-item">
+            <h3>Bachelor’s Degree in English</h3>
+            <p><em>University Name (Placeholder)</em></p>
+            <p>Emphasis on literature, writing, and critical analysis.</p>
+          </div>
         </div>
+      </div>
     </section>
 
-    <!-- Services Section -->
-    <section id="services" class="services">
-        <div class="container">
-            <h2 class="section-title">Services</h2>
-            <div class="services-grid">
-                <div class="service-card">
-                    <h3>Web Development</h3>
-                    <p>Full-stack web application development using modern technologies and best practices. From concept to deployment, I build scalable and maintainable solutions.</p>
-                    <ul class="service-list">
-                        <li>Frontend Development (React, Vue, Angular)</li>
-                        <li>Backend Development (Node.js, Python, etc.)</li>
-                        <li>Database Design & Management</li>
-                        <li>API Development</li>
-                    </ul>
-                </div>
-                <div class="service-card">
-                    <h3>UI/UX Design</h3>
-                    <p>Creating beautiful and functional user interfaces that enhance user engagement and satisfaction. I focus on usability, accessibility, and visual appeal.</p>
-                    <ul class="service-list">
-                        <li>User Experience Design</li>
-                        <li>Interface Design</li>
-                        <li>Wireframing & Prototyping</li>
-                        <li>Design Systems</li>
-                    </ul>
-                </div>
-                <div class="service-card">
-                    <h3>Responsive Design</h3>
-                    <p>Ensuring your digital products look and work perfectly across all devices and screen sizes. Mobile-first approach to modern web design.</p>
-                    <ul class="service-list">
-                        <li>Mobile-First Design</li>
-                        <li>Cross-Browser Testing</li>
-                        <li>Performance Optimization</li>
-                        <li>Accessibility Compliance</li>
-                    </ul>
-                </div>
-                <div class="service-card">
-                    <h3>Consulting</h3>
-                    <p>Strategic guidance on technology choices, architecture decisions, and digital transformation. Helping businesses leverage technology effectively.</p>
-                    <ul class="service-list">
-                        <li>Technology Stack Selection</li>
-                        <li>Architecture Planning</li>
-                        <li>Code Review & Quality</li>
-                        <li>Team Mentoring</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+    <!-- Research Interests -->
+    <section id="research" class="section" aria-labelledby="research-heading">
+      <div class="container">
+        <h2 id="research-heading">Research Interests</h2>
+        <p>My research explores how literacy evolves through media, culture, and technology, and how educators can use contemporary texts to expand traditional pedagogical approaches.</p>
+        <ul class="research-list">
+          <li>New Literacy Studies</li>
+          <li>Anime &amp; Manga in Education</li>
+          <li>Critical Thinking Development</li>
+          <li>Digital &amp; Multimodal Literacies</li>
+          <li>ESL / E-Learning Pedagogy</li>
+          <li>Cultural Studies in Language Learning</li>
+        </ul>
+        <blockquote class="pull-quote">“Literacy is not limited to print — it lives in stories, images, and shared culture.”</blockquote>
+      </div>
     </section>
 
-    <!-- Portfolio/Projects Section -->
-    <section id="portfolio" class="portfolio">
-        <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
-            <div class="portfolio-filters">
-                <button class="filter-btn active" data-filter="all">All</button>
-                <button class="filter-btn" data-filter="web">Web</button>
-                <button class="filter-btn" data-filter="design">Design</button>
-                <button class="filter-btn" data-filter="mobile">Mobile</button>
-            </div>
-            <div class="portfolio-grid">
-                <div class="portfolio-item" data-category="web">
-                    <div class="portfolio-image">
-                        <img src="images/project-1.jpg" alt="Project 1">
-                        <div class="portfolio-overlay">
-                            <a href="#" class="portfolio-link">View Project</a>
-                        </div>
-                    </div>
-                    <h3>E-Commerce Platform</h3>
-                    <p class="portfolio-category">Web Development</p>
-                    <p class="portfolio-description">A full-featured e-commerce platform built with React and Node.js featuring product catalog, shopping cart, and secure payments.</p>
-                </div>
-                <div class="portfolio-item" data-category="design">
-                    <div class="portfolio-image">
-                        <img src="images/project-2.jpg" alt="Project 2">
-                        <div class="portfolio-overlay">
-                            <a href="#" class="portfolio-link">View Project</a>
-                        </div>
-                    </div>
-                    <h3>Brand Identity Design</h3>
-                    <p class="portfolio-category">Design</p>
-                    <p class="portfolio-description">Complete brand identity including logo, color palette, typography, and guidelines for a startup tech company.</p>
-                </div>
-                <div class="portfolio-item" data-category="web">
-                    <div class="portfolio-image">
-                        <img src="images/project-3.jpg" alt="Project 3">
-                        <div class="portfolio-overlay">
-                            <a href="#" class="portfolio-link">View Project</a>
-                        </div>
-                    </div>
-                    <h3>Content Management System</h3>
-                    <p class="portfolio-category">Web Development</p>
-                    <p class="portfolio-description">Custom CMS application for managing digital content with a user-friendly interface and powerful admin panel.</p>
-                </div>
-                <div class="portfolio-item" data-category="mobile">
-                    <div class="portfolio-image">
-                        <img src="images/project-4.jpg" alt="Project 4">
-                        <div class="portfolio-overlay">
-                            <a href="#" class="portfolio-link">View Project</a>
-                        </div>
-                    </div>
-                    <h3>Mobile App Design</h3>
-                    <p class="portfolio-category">Mobile</p>
-                    <p class="portfolio-description">iOS and Android app design for a fitness tracking application with intuitive navigation and engaging UI.</p>
-                </div>
-                <div class="portfolio-item" data-category="web">
-                    <div class="portfolio-image">
-                        <img src="images/project-5.jpg" alt="Project 5">
-                        <div class="portfolio-overlay">
-                            <a href="#" class="portfolio-link">View Project</a>
-                        </div>
-                    </div>
-                    <h3>SaaS Dashboard</h3>
-                    <p class="portfolio-category">Web Development</p>
-                    <p class="portfolio-description">Analytics dashboard for a SaaS platform featuring real-time data visualization and interactive charts.</p>
-                </div>
-                <div class="portfolio-item" data-category="design">
-                    <div class="portfolio-image">
-                        <img src="images/project-6.jpg" alt="Project 6">
-                        <div class="portfolio-overlay">
-                            <a href="#" class="portfolio-link">View Project</a>
-                        </div>
-                    </div>
-                    <h3>Web Design</h3>
-                    <p class="portfolio-category">Design</p>
-                    <p class="portfolio-description">Modern website design for a creative agency featuring elegant typography and compelling visual hierarchy.</p>
-                </div>
-            </div>
+    <!-- Thesis & Academic Work -->
+    <section id="work" class="section" aria-labelledby="work-heading">
+      <div class="container">
+        <h2 id="work-heading">Academic Work</h2>
+        <div class="work-list">
+          <article class="work-item">
+            <h3>New Literacies: Using Anime to Expand Teachers’ Resources in the Classroom</h3>
+            <p>This work examines how anime and popular media can serve as legitimate, powerful tools for literacy instruction and critical engagement.</p>
+          </article>
+
+          <article class="work-item">
+            <h3>Words Have Power: Anime as a Teacher of Critical Thinking</h3>
+            <p>A research proposal exploring narrative media as a framework for analytical and reflective learning.</p>
+          </article>
         </div>
+      </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <div class="container">
-            <h2 class="section-title">Technical Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-group">
-                    <h3>Frontend</h3>
-                    <div class="skill-list">
-                        <div class="skill-item">
-                            <span>HTML5 & CSS3</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 95%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span>JavaScript</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 90%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span>React</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 88%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span>Vue.js</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 85%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span>TypeScript</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 82%"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="skill-group">
-                    <h3>Backend</h3>
-                    <div class="skill-list">
-                        <div class="skill-item">
-                            <span>Node.js</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 88%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span>Python</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 85%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span>Express.js</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 87%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span>PostgreSQL</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 86%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span>MongoDB</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 84%"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="skill-group">
-                    <h3>Design & Tools</h3>
-                    <div class="skill-list">
-                        <div class="skill-item">
-                            <span>Figma</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 92%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span>Adobe XD</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 85%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span>Git & GitHub</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 93%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span>AWS</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 80%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span>Docker</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 80%"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <!-- Teaching Experience -->
+    <section id="teaching" class="section" aria-labelledby="teaching-heading">
+      <div class="container">
+        <h2 id="teaching-heading">Teaching Experience</h2>
+        <p class="lead">Instructor / Graduate Teaching Assistant — English &amp; Composition Courses — University of Puerto Rico System</p>
+        <p>Taught and supported English composition and language courses, focusing on academic writing, critical reading, and student engagement. Responsibilities included curriculum support, assessment, mentoring, and instructional design.</p>
+        <ul class="teaching-skills">
+          <li>English Composition</li>
+          <li>ESL Instruction</li>
+          <li>Curriculum Development</li>
+          <li>Academic Writing Support</li>
+          <li>Collaborative Learning</li>
+          <li>Student Mentorship</li>
+        </ul>
+      </div>
     </section>
 
-    <!-- Experience Section -->
-    <section id="experience" class="experience">
-        <div class="container">
-            <h2 class="section-title">Professional Experience</h2>
-            <div class="experience-timeline">
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <h3>Senior Full Stack Developer</h3>
-                        <p class="timeline-company">Tech Innovations Inc.</p>
-                        <p class="timeline-period">2023 - Present</p>
-                        <p class="timeline-description">
-                            Leading development of multiple web applications, mentoring junior developers, and architecting scalable solutions using React, Node.js, and cloud technologies.
-                        </p>
-                        <ul class="timeline-achievements">
-                            <li>Led migration of legacy system to microservices architecture</li>
-                            <li>Improved application performance by 40% through optimization</li>
-                            <li>Mentored 5 junior developers in best practices and modern frameworks</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <h3>Full Stack Developer</h3>
-                        <p class="timeline-company">Digital Solutions Corp.</p>
-                        <p class="timeline-period">2021 - 2023</p>
-                        <p class="timeline-description">
-                            Developed full-stack web applications for e-commerce and SaaS clients, implemented responsive designs, and optimized database queries.
-                        </p>
-                        <ul class="timeline-achievements">
-                            <li>Developed 8+ production applications using React and Node.js</li>
-                            <li>Implemented payment processing systems and improved security</li>
-                            <li>Reduced page load times by optimizing frontend and backend code</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <h3>Junior Web Developer</h3>
-                        <p class="timeline-company">StartUp Web Services</p>
-                        <p class="timeline-period">2019 - 2021</p>
-                        <p class="timeline-description">
-                            Built responsive websites and web applications, collaborated with designers, and contributed to codebase improvements.
-                        </p>
-                        <ul class="timeline-achievements">
-                            <li>Built 15+ responsive websites for various clients</li>
-                            <li>Learned and mastered React framework</li>
-                            <li>Contributed to open-source projects</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <!-- Creative & Educational Projects -->
+    <section id="projects" class="section" aria-labelledby="projects-heading">
+      <div class="container">
+        <h2 id="projects-heading">Creative & Educational Projects</h2>
+        <article class="project">
+          <h3>Short Film &amp; Narrative Projects</h3>
+          <p>Roles include assistant producer, screenwriter, and director. These projects inform my pedagogical approach through storytelling and visual literacy.</p>
+        </article>
+        <article class="project">
+          <h3>Digital Educational Content</h3>
+          <p>Creation of teaching materials and digital resources that blend humor, narrative, and instructional design.</p>
+        </article>
+      </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <p class="contact-intro">
-                I'm always interested in hearing about new projects and opportunities. Feel free to reach out if you'd like to collaborate or just say hello!
-            </p>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <h3>Email</h3>
-                        <p><a href="mailto:juan@example.com">juan@example.com</a></p>
-                    </div>
-                    <div class="contact-item">
-                        <h3>Phone</h3>
-                        <p><a href="tel:+1234567890">+1 (234) 567-8900</a></p>
-                    </div>
-                    <div class="contact-item">
-                        <h3>Location</h3>
-                        <p>San Juan, Puerto Rico</p>
-                    </div>
-                    <div class="contact-item">
-                        <h3>Follow Me</h3>
-                        <div class="social-links">
-                            <a href="#" class="social-link" aria-label="GitHub">GitHub</a>
-                            <a href="#" class="social-link" aria-label="LinkedIn">LinkedIn</a>
-                            <a href="#" class="social-link" aria-label="Twitter">Twitter</a>
-                            <a href="#" class="social-link" aria-label="Instagram">Instagram</a>
-                        </div>
-                    </div>
-                </div>
-                <form class="contact-form">
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="subject">Subject</label>
-                        <input type="text" id="subject" name="subject" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Send Message</button>
-                </form>
-            </div>
-        </div>
+    <!-- Skills & Competencies -->
+    <section id="skills" class="section" aria-labelledby="skills-heading">
+      <div class="container">
+        <h2 id="skills-heading">Skills</h2>
+        <ul class="skills-grid">
+          <li>Teaching & Pedagogy</li>
+          <li>ESL / EFL Instruction</li>
+          <li>Teaching Materials Design</li>
+          <li>E-Learning</li>
+          <li>Classroom Facilitation</li>
+          <li>Research & Writing</li>
+          <li>Academic Writing</li>
+          <li>Media Analysis</li>
+          <li>Critical Theory</li>
+          <li>Qualitative Research</li>
+          <li>Storytelling & Scriptwriting</li>
+          <li>Digital Literacy & Presentation Design</li>
+        </ul>
+      </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <p>&copy; 2026 Juan A. Colón Norat. All rights reserved.</p>
-                <div class="footer-links">
-                    <a href="#home">Home</a>
-                    <a href="#about">About</a>
-                    <a href="#portfolio">Portfolio</a>
-                    <a href="#contact">Contact</a>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <!-- Contact -->
+    <section id="contact" class="section" aria-labelledby="contact-heading">
+      <div class="container">
+        <h2 id="contact-heading">Contact</h2>
+        <p>For academic collaboration, teaching opportunities, or professional inquiries, feel free to reach out.</p>
+        <form id="contact-form" class="contact-form" aria-label="Contact form">
+          <div class="form-row">
+            <label for="contact-name">Name</label>
+            <input id="contact-name" name="name" type="text" required>
+          </div>
+          <div class="form-row">
+            <label for="contact-email">Email</label>
+            <input id="contact-email" name="email" type="email" required>
+          </div>
+          <div class="form-row">
+            <label for="contact-message">Message</label>
+            <textarea id="contact-message" name="message" rows="6" required></textarea>
+          </div>
+          <button type="submit" class="btn primary">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
 
-    <!-- Scripts -->
-    <script src="js/main.js"></script>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© Juan A. Colón Norat — All Rights Reserved</p>
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="#">ResearchGate</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">Academia.edu</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
 </body>
 </html>

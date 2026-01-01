@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="640" height="360" viewBox="0 0 640 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Project placeholder image">
+  <rect width="100%" height="100%" fill="#f3f2f0" />
+  <rect x="24" y="24" width="592" height="240" rx="8" fill="#d7cfc8" />
+  <text x="50%" y="86%" text-anchor="middle" fill="#8b7f76" font-size="14">Project image placeholder</text>
+</svg>
