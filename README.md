@@ -45,7 +45,7 @@ This site is ready for static hosting platforms. For GitHub Pages set the reposi
 © Juan A. Colón Norat — All rights reserved.
 
 ## Contact
-Professional links (placeholders):
-- LinkedIn: https://linkedin.example.com
-- ResearchGate: https://researchgate.example.com
+Professional links:
+- LinkedIn: https://www.linkedin.com/in/juan-arturo-colon-norat-47585532/
+- ResearchGate: https://www.researchgate.net/profile/Juan-Colon-Norat
 - Academia.edu: https://academia.example.com
