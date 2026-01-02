@@ -1,4 +1,4 @@
-**Note:** This branch (`main`) contains the source code and is the active development branch. The `Final-Deployment` branch is used for deployment-ready publishing.
+**Note:** This branch contains the deployment-ready static site and is intended for publishing. For development and source content, see the `main` branch.
 
 # Juan A. Colón Norat — Professional Portfolio Website
 
@@ -22,12 +22,6 @@ This repository contains the source code for the personal portfolio website of *
 - Framework: HTML / CSS / JavaScript (static)
 - Styling: Custom CSS (replace or integrate Tailwind / Bootstrap if desired)
 - Deployment: GitHub Pages / Netlify / Vercel
-
-## Project Structure
-- `index.html` — Main landing page with all sections (Home, About, Education, Research, Teaching, Projects, Contact)
-- `styles/main.css` — Core styles and responsive rules
-- `js/main.js` — Minimal interaction (mobile nav, smooth scroll, contact form stub)
-- `images/` — Placeholder images and illustrations
 
 ## Setup & Installation
 1. Clone the repository:
